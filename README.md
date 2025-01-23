@@ -2,7 +2,7 @@
 
 After migrating Bitvavo account from legacy to Bitvavo powered by Hyphe, you will have to close your old account and open a new one. 
 
-Thankfully you can install a full history from your old account as a CVS. Unfortunately this file needs to be adjusted to be imported to Blockpit manually.
+Thankfully you can install a full history from your old account as a CSV. Unfortunately this file needs to be adjusted to be imported to Blockpit manually.
 
 This script also converts the time zone to UTC as required by Blockpit. 
 
@@ -12,8 +12,8 @@ https://help.blockpit.io/hc/en-us/articles/360011877920-How-to-import-my-CSV-Exc
 
 ### Usage:
 - Clone the repository or download just the `main.php` file
-- Copy the Bitvavo file to same folder of `main.php` and name it  `bitvavo.csv`
-- Install PHP locally. No minimum version needed.
+- Copy the Bitvavo file to same folder of `main.php` and name it `bitvavo.csv`
+- Install PHP locally. No minimum version needed
 - Run in the terminal `php main.php`
 - If everything goes well, a new file `blockpit.csv` will be created which can be imported to Blockpit
 
