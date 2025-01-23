@@ -82,7 +82,7 @@ foreach ($fileData as $line) {
         case "buy":
             $record[] = "Trade";
             $record[] = $line[8]; //outgoing currency
-            $record[] = abs($line[9]); //outgoing amount
+            $record[] = abs($line[9])  - $line[11]; //outgoing amount -  fees as this is a known issue from Bitvavo side
             $record[] = $line[4]; //incoming asset
             $record[] = $line[5]; //incoming amount
             $record[] = $line[10]; //fee asset
